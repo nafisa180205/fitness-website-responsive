@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playwrite+DK+Uloopet:wght@100..400&display=swap');
-/* font-family: "Playwrite DK Uloopet", cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:wght@100..900&display=swap');
+/* font-family: "Dancing Script", cursive; */
 
 /* shared style  */
 *{
@@ -26,6 +26,43 @@ header, main, footer{
     width: 85%;
     margin: 0 auto;
 }
+
+section{
+    padding-top: 2rem;
+}
+
+.btn-primary{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 16px 40px 16px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    border: none;
+
+}
+
+.btn-secondary{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 16px 40px 16px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 42px;
+    background-color: black;
+
+}
+
+img{
+    width: 100%;
+}
+
 
 /* navbar style starts here */
 .navbar{
@@ -69,5 +106,122 @@ header, main, footer{
     background: rgb(230, 83, 60);;
 }
 
+.navbar .ham-burger{
+    display: none;
+
+}
+
+
+.navbar .ham-burger i{
+    color: white;
+    width: 24px;
+    height: 24px;
+    background-color: black;
+    font-size: 1.2rem;
+    
+
+}
+
 
 /* navbar style ends here */
+
+/* Get body in shape & stay healthy section */
+
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 1rem;
+}
+
+.banner-container .left-box{
+    margin-top: 3rem;
+    width: 520px;
+    height: 281px;
+}
+.banner-container .left-box h1{
+    padding-top: 3rem;
+    color: rgb(255, 255, 255);
+    font-size: 4.5rem;
+    font-weight: 900;
+    text-align: left;
+    
+}
+
+.banner-container .left-box span{
+    font-family: "Dancing Script", cursive;
+    font-weight: 600;
+
+}
+
+.banner-container .left-box p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+.banner-container .left-box .btn{
+    padding-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+
+.button-bottom .circle{
+    width: 40px;
+    height: 40px;
+    background: rgb(230, 83, 60);
+    border-radius: 50%;
+}
+
+.button-bottom h4{
+    color: rgb(250, 250, 249);
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: left;
+
+}
+.button-bottom{
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 1.5rem ;
+}
+.button-bottom p{
+    color: rgb(250, 250, 249);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+
+}
+
+.button-top h4{
+    color: rgb(250, 250, 249);
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-align: left;
+
+}
+.button-top{
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+    padding: 1.5rem ;
+}
+.button-top p{
+    color: rgb(250, 250, 249);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+
+}
+/* Get body in shape & stay healthy section */
