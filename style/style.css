@@ -36,9 +36,6 @@ section{
     font-size: 1.1rem;
     font-weight: 500;
     padding: 16px 40px 16px 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border-radius: 42px;
     background: rgb(230, 83, 60);
     border: none;
@@ -50,9 +47,6 @@ section{
     font-size: 18px;
     font-weight: 500;
     padding: 16px 40px 16px 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 42px;
     background-color: black;
@@ -156,7 +150,6 @@ header{
 .banner-container .left-box span{
     font-family: "Dancing Script", cursive;
     font-weight: 600;
-
 }
 
 .banner-container .left-box p{
@@ -179,15 +172,13 @@ header{
     position: relative;
     width: 349px;
     height: 580px;
-
 }
 
 
 .button-bottom{
     position: absolute;
     bottom: 84px;
-    left: -111px;
-    
+    left: -111px;    
 }
 .button-bottom{
     box-sizing: border-box;
@@ -201,7 +192,6 @@ header{
     gap: 10px;
     padding: 1.5rem ;
 }
-
 
 .button-bottom .circle{
     width: 40px;
@@ -247,7 +237,6 @@ header{
     font-size: 1.5rem;
     font-weight: 900;
     text-align: left;
-
 }
 
 .button-top p{
@@ -255,7 +244,6 @@ header{
     font-size: 1rem;
     font-weight: 400;
     text-align: left;
-
 }
 /* Get body in shape & stay healthy section */
 
@@ -313,6 +301,55 @@ header{
 }
 /* Change Your Habits ends here */
 
+
+/* Run an Extra Mile Easily starts */
+.run_container{
+    display: flex;
+    justify-content: center;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    gap: 3.5rem;
+    margin-top: 5rem;
+    padding-bottom: 1.5rem;
+}
+
+.run_container .left_box{
+    width: 60%;
+    padding-left: 3rem;
+}
+
+.run_container .left_box .title{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: left;
+    padding-bottom: 0.9rem;
+}
+
+.run_container .left_box .subtitle{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    padding-bottom: 2rem;
+}
+
+.run_container .right_box{
+    width: 40%;
+}
+
+.run_container .right_box .image{
+    width: 366px;
+    height: 100%;
+    
+}
+
+.run_container .right_box .image img{
+    border-radius: 18px;
+}
+/* Run an Extra Mile Easily ends */
+
+
 /* responsive starts here  */
 
 
@@ -367,5 +404,27 @@ header{
     }
     
     /*Change Your Habits responsive ends here  */
+
+    /* Run an Extra Mile Easily starts */
+
+    .run_container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .run_container .left_box{
+        width: 90%;
+    }
+    .run_container .right_box{
+        width: 100%;
+        
+    }
+
+    .run_container .right_box .image{
+        width: 287px;
+        height: 170px;
+        margin: 0 auto;
+        padding-bottom: 1rem;
+    }
 
 }
