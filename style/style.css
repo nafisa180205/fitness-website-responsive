@@ -35,7 +35,7 @@ section{
     color: rgb(255, 255, 255);
     font-size: 1.1rem;
     font-weight: 500;
-    padding: 16px 40px 16px 40px;
+    padding: 14px 60px ;
     border-radius: 42px;
     background: rgb(230, 83, 60);
     border: none;
@@ -46,7 +46,7 @@ section{
     color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: 500;
-    padding: 16px 40px 16px 40px;
+    padding: 14px 60px ;
     border: 1px solid rgb(255, 255, 255);
     border-radius: 42px;
     background-color: black;
@@ -57,6 +57,18 @@ img{
     width: 100%;
 }
 
+.logo{
+    color: rgb(230, 83, 60);
+    font-size: 2rem;
+    text-align: left;
+    font-style: italic;
+}
+
+
+
+/* hr{
+
+} */
 
 /* navbar style starts here */
 header{
@@ -69,12 +81,7 @@ header{
     padding-top: 2.5rem;
 
 }
-.navbar h3{
-    color: rgb(230, 83, 60);
-    font-size: 2rem;
-    text-align: left;
-    font-style: italic;
-}
+
 
 .navbar .lists {
     /* width: 465px; */
@@ -114,7 +121,6 @@ header{
     color: white;
     width: 24px;
     height: 24px;
-    background-color: black;
     font-size: 1.2rem;
     
 
@@ -350,11 +356,280 @@ header{
 /* Run an Extra Mile Easily ends */
 
 
+
+/* /////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////// */
+
+ /* BMI Calculator starts here */
+
+ .bmi_description{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.bmi_description h2{
+    color: rgb(255, 255, 255);
+    font-size: 3.5rem;
+    font-weight: 900;
+    text-align: left;
+
+ }
+
+
+ .bmi_description p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    
+ } 
+ .background{
+    width: 100%;
+    background: rgb(34, 34, 34);
+
+}
+.calculator{
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    padding: 3rem 5rem;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form .row input {
+    width: 282px;
+    height: 48px;
+    margin: 6px;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: Inter;
+    font-size: 16px;
+    padding-left: 10px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+}
+
+form .row  select{
+    width: 295px;
+    height: 52px;
+    margin: 6px;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: Inter;
+    font-size: 16px;
+    padding-left: 10px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+
+}
+
+form .column select{
+    width: 606px;
+    height: 52px;
+    margin: 6px;
+    color: rgba(255, 255, 255, 0.6);
+    font-family: Inter;
+    font-size: 16px;
+    padding-left: 10px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+}
+.table_container{
+    width: 35%;
+}
+.form_container{
+    width: 65%;
+}
+.form_container p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+.calculator h3{
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+    font-weight: 800;
+    text-align: left;
+
+}
+.calculator button{
+    margin-top: 3rem;
+}
+.table_container table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+.table_container th{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    border: 1.5px solid rgba(255, 255, 255, 0.1);;
+    padding: 13px ;
+
+}
+
+.table_container td{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    border: 1.5px solid rgba(255, 255, 255, 0.1);;
+    padding: 13px;
+}
+    
+ /* BMI Calculator ends here */
+
+/* Meet Our Team starts here  */
+
+
+.team_content h2{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+
+}
+
+.team_content p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: .9rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 14px;
+}
+
+.team_members {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    
+}
+.team_members .card{
+    position: relative;  
+}
+
+.team_members .card .text{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+.team_members .card .text h4{
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-align: left;
+}
+
+.team_members .card .text p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+    margin-top: 5px;
+
+}
+
+.team_members .card img{ 
+    height: 272px;
+    border-radius: 18px;
+    
+}
+
+/* Meet Our Team ends here  */
+
+/* footer section starts here  */
+footer{
+    margin-top: 90px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.1);
+
+}
+
+
+.footer_content{
+
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+    /* gap: 5rem; */
+    padding: 3.5rem 0;
+}
+.footer_content p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
+    padding-top: 1.5rem;
+}
+
+.another_card{
+    display: flex;
+    justify-content: space-between;
+}
+
+.small_card h4{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: left;
+    padding-bottom: 15px;
+}
+.small_card ul li{
+    padding-top: 1.5rem;
+
+}
+
+.small_card ul li a{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: left;
+    
+}
+
+.bottom_footer p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 1.7rem 0;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
+
+}
+/* footer section ends here  */
+
+
 /* responsive starts here  */
 
 
 @media screen and (max-width: 576px) {
     /* header section responsive starts here */
+    .btn-primary{   
+        padding: 14px 30px ;  
+    
+    }
+    
+    .btn-secondary{
+        padding: 14px 30px ;  
+    
+    }
     .container{
         width: 90%;
     }
@@ -414,6 +689,7 @@ header{
     }
     .run_container .left_box{
         width: 90%;
+        padding-left: 1rem;
     }
     .run_container .right_box{
         width: 100%;
@@ -425,6 +701,72 @@ header{
         height: 170px;
         margin: 0 auto;
         padding-bottom: 1rem;
+    }
+
+    /* BMI Calculator starts here */
+
+    .bmi_description{
+        width: 100%;  
+    }
+
+    .calculator{
+        flex-direction: column;
+        padding: 0px;
+    }
+
+    .form_container{
+        width: 100%;
+    }
+    .table_container{
+        width: 100%;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    form .row{
+        display: flex;
+    } 
+    
+    form .row input {
+        width: 145.5px;
+        height: 48px;
+    }
+    
+    form .row  select{
+        width: 170.5px;
+        height: 48px;
+    
+    }
+    
+    form .column select{
+        width: 326.5px;
+    }
+
+
+    
+    /* BMI Calculator ends here */
+
+    /* Meet Our Team starts here  */
+    .team_members {
+        
+        grid-template-columns: repeat(1 , 1fr);
+        
+        
+    }
+
+
+    /*  footer section starts here   */
+    .footer_content{
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .another_card{
+        flex-direction: column;
+        gap: 20px;
     }
 
 }
