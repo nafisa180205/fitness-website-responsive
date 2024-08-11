@@ -39,6 +39,7 @@ section{
     border-radius: 42px;
     background: rgb(230, 83, 60);
     border: none;
+    white-space: nowrap;
 
 }
 
@@ -50,6 +51,7 @@ section{
     border: 1px solid rgb(255, 255, 255);
     border-radius: 42px;
     background-color: black;
+    white-space: nowrap;
 
 }
 
@@ -84,16 +86,18 @@ header{
 
 
 .navbar .lists {
-    /* width: 465px; */
-    height: 46px;
+
+    height: 40px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     gap: 2.8rem;
     box-sizing: border-box;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 39px; 
-    padding: 0 1rem;
+    border-radius: 39px;
+    overflow: hidden;
+    padding: 0 2px;
+    
 
 }
 
@@ -102,6 +106,9 @@ header{
     font-size: 1rem;
     font-weight: 400;
     transition: .3s all linear;
+    padding: 0 10px ;
+    
+    
 }
 
 .navbar .lists li a:hover{
@@ -287,6 +294,7 @@ header{
 
 .routine_container .card img{
     border-radius: 50%;
+    border: 3px solid rgba(92, 91, 91, 0.5);
 }
 
 .routine_container .card h4{
@@ -337,6 +345,7 @@ header{
     font-size: 14px;
     font-weight: 400;
     text-align: left;
+    width: 70%;
     padding-bottom: 2rem;
 }
 
@@ -348,12 +357,91 @@ header{
     width: 366px;
     height: 100%;
     
+    
 }
 
 .run_container .right_box .image img{
     border-radius: 18px;
+    object-fit: none;
+    object-position: 66% 28%;
+    zoom: 60%;
+    
 }
 /* Run an Extra Mile Easily ends */
+
+/*  <!-- Trainings and Exercises starts here --> */
+.training_description h2{
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    font-weight: 900;
+    text-align: left;
+    padding-top: 5rem;
+}
+
+.training_description p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    width: 55%;
+    padding-top: 1rem;
+}
+
+.trining_images {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    
+}
+.trining_images p{
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+.trining_images .row-1{
+    display: grid;
+    grid-template-columns: .6fr 1.2fr .7fr;
+}
+
+.trining_images .row-2{
+    display: grid;
+    grid-template-columns: 1fr .7fr .8fr;
+    margin: -25px 0;
+
+}
+
+.trining_images img{
+    height: 230px;
+}
+
+.trining_images .image {
+    position: relative;
+}
+.trining_images .image .bottom-left{
+    position: absolute;
+    color: white;
+    bottom: 40px;
+    left: 50px;
+    
+}
+.trining_images .color-1{
+    /* background-color: rgba(6, 255, 210, 0.5); */
+    background:linear-gradient(0deg, rgba(255, 0, 150, 0.3), rgba(255, 0, 150, 0.3));
+}
+.trining_images .image .top-left{
+    position: absolute;
+    color: white;
+    top: 40px;
+    left: 50px;
+}
+.trining_images .image .top-right{
+    position: absolute;
+    color: white;
+    top: 40px;
+    right: 50px;
+}
+/*  <!-- Trainings and Exercises ends here --> */
 
 
 
@@ -365,6 +453,7 @@ header{
  .bmi_description{
     width: 50%;
     margin: 0 auto;
+    padding-bottom: 4rem;
 }
 
 .bmi_description h2{
@@ -381,6 +470,7 @@ header{
     font-size: 14px;
     font-weight: 400;
     text-align: left;
+    padding-top: 14px;
     
  } 
  .background{
@@ -461,11 +551,12 @@ form .column select{
 
 }
 .calculator button{
-    margin-top: 3rem;
+    margin: 3rem 0;  
 }
 .table_container table {
     border-collapse: collapse;
     width: 100%;
+    margin-top: 3rem;
 }
 
 
@@ -506,6 +597,8 @@ form .column select{
     font-size: .9rem;
     font-weight: 400;
     text-align: center;
+    width: 55%;
+    margin: 0 auto;
     margin-top: 14px;
 }
 
@@ -554,6 +647,151 @@ form .column select{
 
 /* Meet Our Team ends here  */
 
+/* <!-- choose the best plan starts here --> */
+.best_container h3{
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.best_container p{
+    color: rgba(255, 255, 255, 0.5);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+.best_description{
+    
+    padding-bottom: 2rem;
+}
+
+.best_description ul{
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1.5rem;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+    overflow: hidden;
+    padding: 0 2px;
+    margin: 0 auto;
+}
+
+
+
+.best_description ul li {
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: .3s all linear;
+    padding: 0 10px ;
+    
+    
+}
+
+.best_description ul li:hover{
+    border-radius: 46px;
+    padding: 8px 20px 8px 20px;
+    background: rgb(230, 83, 60);
+    
+}
+.best_container .cards{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin: 0 auto;
+}
+
+
+.best_container .card{ 
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px 0;
+    border-radius: 16px;
+    transition: .3s all linear;
+
+}
+
+.best_container .card h4{
+    font-size:14px ;
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+
+.best_container .card p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.best_container  .card span {
+    font-size: 30px ;
+    color: #ffffff;
+}
+.best_container .card ul li {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 5px;
+}
+
+.best_container .card ul li:before {
+    content: '✓';
+    color: #ffffff  ;
+    border: 1px solid rgb(230, 83, 60);
+    padding: 2px 5px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.best_container .card .btn-card{
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 7px 40px ;
+    border-radius: 42px;
+    background: rgb(230, 83, 60);
+    border: none;
+    white-space: nowrap;
+    margin-top: 15px;
+
+}
+
+.best_container .card:hover {
+    background: rgb(230, 83, 60);
+    margin-bottom: 3rem;
+}
+.best_container .card:hover .btn-card{
+    background-color: rgb(255, 255, 255);
+    color: rgb(230, 83, 60);
+}
+.best_container .card:hover li{
+    color: #ffffff;
+}
+
+.best_container .card:hover li:before{
+    
+    border: 1px solid rgb(255, 255, 255);
+    
+
+}
+/* <!-- choose the best plan ends here --> */
+
 /* footer section starts here  */
 footer{
     margin-top: 90px;
@@ -576,6 +814,7 @@ footer{
     font-size: 1rem;
     font-weight: 400;
     text-align: left;
+    width: 70%;
     padding-top: 1.5rem;
 }
 
@@ -622,12 +861,14 @@ footer{
 @media screen and (max-width: 576px) {
     /* header section responsive starts here */
     .btn-primary{   
-        padding: 14px 30px ;  
+        padding: 14px 25px ; 
+        font-size: 16px; 
     
     }
     
     .btn-secondary{
-        padding: 14px 30px ;  
+        padding: 14px 25px ;
+        font-size: 16px;  
     
     }
     .container{
@@ -651,13 +892,25 @@ footer{
     .banner-container .left-box h1{
         font-size: 2.5rem;            
     }
-    .button-top {       
-        left: 179px;
-        top: 10px;
+   
+    .button-top{
+
+        left: 168px;
+        top: 0px;
+        padding: 1rem ;
+    }
+    
+    .button-top h4{
+        font-size: 1.4rem;
+    }
+    
+    .button-top p{
+        font-size: .9rem;
     }
     .button-bottom {
         bottom: 152px;
         left: 0px;
+        padding: 1rem ;
     }
 
     /* header section responsive ends here */
@@ -687,10 +940,24 @@ footer{
         align-items: center;
         justify-content: center;
     }
+    .run_container .left_box .btn-primary{
+        width: 90%;
+        
+    }
     .run_container .left_box{
         width: 90%;
         padding-left: 1rem;
     }
+    .run_container .left_box .title{
+
+        font-size: 2rem;
+    }
+    
+    .run_container .left_box .subtitle{
+        width: 90%;
+        padding-bottom: 2rem;
+    }
+    
     .run_container .right_box{
         width: 100%;
         
@@ -706,12 +973,25 @@ footer{
     /* BMI Calculator starts here */
 
     .bmi_description{
-        width: 100%;  
+        width: 100%;
+        padding-bottom: 4rem;  
     }
+
+    
+    
+    .bmi_description h2{
+        font-size: 2rem;
+    
+     }
+    
 
     .calculator{
         flex-direction: column;
         padding: 0px;
+    }
+
+    .calculator h3{
+        font-size: 1.2rem;
     }
 
     .form_container{
@@ -719,6 +999,12 @@ footer{
     }
     .table_container{
         width: 100%;
+        
+    }
+
+    .table_container table{
+        margin-top: 2rem;
+
     }
 
     form {
@@ -746,16 +1032,94 @@ footer{
     }
 
 
+    .calculator button{
+        margin: 2rem 0;  
+    }
     
     /* BMI Calculator ends here */
 
     /* Meet Our Team starts here  */
+    .team_content h2{   
+        font-size: 2rem;   
+    
+    }
+
+    .team_content p{
+        width: 90%;
+    }
     .team_members {
-        
-        grid-template-columns: repeat(1 , 1fr);
-        
+        grid-template-columns: repeat(1 , 1fr);  
         
     }
+
+
+    /* best plan  starts here*/
+    .best_container h3{
+        font-size: 32px;
+    }
+    .best_container p{ 
+        width: 80%;   
+    }
+
+    .best_description{   
+        padding-bottom: 2rem;
+    }
+   
+
+    .best_container .cards{
+        width: 100%;
+        flex-direction: column;
+        margin: 0 ;
+        gap: 3rem;
+    }
+    
+    
+    .best_container .card{ 
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 30px 0;
+        border-radius: 16px;
+    
+    }
+    
+    .best_container .card h4{
+        font-size:14px ;
+        color: white;
+        text-align: center;
+        padding-bottom: 20px;
+    
+    }
+    
+    .best_container .card p {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+    
+    .best_container  .card span {
+        font-size: 30px ;
+        color: #ffffff;
+    }
+    .best_container .card ul{
+        padding-bottom: 3rem;
+    }
+    .best_container .card ul li {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.5);
+        padding: 5px;
+    }
+    
+   
+
+    
+    .best_container .card:hover {
+        margin-bottom: 2rem;
+    }
+
+    /* best plan  ends here*/
 
 
     /*  footer section starts here   */
@@ -767,6 +1131,27 @@ footer{
     .another_card{
         flex-direction: column;
         gap: 20px;
+    }
+    .footer_content p{ 
+        width: 90%;
+        padding-bottom: 2rem;
+        
+    }
+
+    .small_card h4{
+        font-size: 1.8rem;
+    }
+    .small_card ul li{
+        padding-top: 1rem;
+    
+    }
+    
+    .small_card ul li a{    
+        font-size: 1.2rem;
+    }
+
+    .bottom_footer p{
+        font-size: 1rem;
     }
 
 }
