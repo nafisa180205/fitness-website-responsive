@@ -642,6 +642,7 @@ form .column select{
 .team_members .card img{ 
     height: 272px;
     border-radius: 18px;
+    filter: brightness(.8);
     
 }
 
@@ -860,6 +861,9 @@ footer{
 
 @media screen and (max-width: 576px) {
     /* header section responsive starts here */
+    section{
+        padding-top: 1rem;
+    }
     .btn-primary{   
         padding: 14px 25px ; 
         font-size: 16px; 
